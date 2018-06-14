@@ -22,5 +22,19 @@ namespace demoapi.Controllers
         {
             return "Hello " + name;
         }
+
+        [HttpPost("{productName}")]
+        public string CreateNewProduct(string productName)
+        {
+            // เพิ่มสินค้าใหม่ในระบบ
+            return "Done";
+        }
+
+        [HttpPut("{id}/{name}")]
+        public string UpdateProductName(string id, string name)
+        {
+            // แก้ไขชื่อสินค้าที่เลือกจากรหัสสินค้า
+            return "Update product completed.";
+        }
     }
 }
