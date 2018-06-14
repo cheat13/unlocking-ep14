@@ -1,1 +1,4 @@
 /*.md
+/demoapi/obj
+/demoapi/bin
+/demoapi/.vscode
